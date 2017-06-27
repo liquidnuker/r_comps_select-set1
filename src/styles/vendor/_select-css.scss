@@ -60,11 +60,14 @@ h1 {
   // This is the native select, we're making everything but the text invisible so
   // we can see the button styles in the wrapper 
   select {
+    // set height(optional) below:
+    // height: inherit;
     // Prefixed box-sizing rules necessary for older browsers
     @include box-sizing(border-box);
     width: 100%;
     margin: 0;
     outline: none;
+    // set padding below:
     // padding: 2px .8em 2px 2px; /* trbl */
     // Font size must be 16px to prevent iOS page zoom on focus
     font-size: 16px;
