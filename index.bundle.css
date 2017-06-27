@@ -6,6 +6,18 @@
   .row:after {
     clear: both; }
 
+.custom-select1_01::after {
+  position: absolute; }
+
+.custom-select1_01 {
+  position: relative; }
+
+.custom-select1_01, .custom-select1_01::after {
+  display: block; }
+
+.custom-select1_01::after {
+  display: none; }
+
 h1, h2, h3, h4, h5, h6, input, textarea, select, html, body, div, span, applet, object, iframe, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
@@ -805,28 +817,22 @@ h1 {
   .custom-select1_01 select:focus {
     outline: none; } }
 
-.custom-select1_01 {
-  position: relative;
-  display: block; }
-  .custom-select1_01 select {
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    width: 100%;
-    margin: 0;
-    outline: none;
-    font-size: 16px; }
-  .custom-select1_01::after {
-    content: " ";
-    position: absolute;
-    top: 50%;
-    right: 1em;
-    z-index: 2;
-    pointer-events: none;
-    display: none; }
+.custom-select1_01 select {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  outline: none;
+  font-size: 16px; }
+
+.custom-select1_01::after {
+  content: " ";
+  top: 50%;
+  right: 1em;
+  z-index: 2;
+  pointer-events: none; }
 
 @supports (-webkit-appearance: none) or (appearance: none) or ((-moz-appearance: none) and (mask-type: alpha)) {
-  .custom-select1_01::after {
-    display: block; }
   .custom-select1_01 select {
     padding-right: 2em;
     background: none;

@@ -54,8 +54,8 @@ h1 {
 // Container used for styling the custom select, the buttom class below adds the
 // bg gradient, corners, etc.
 .custom-select1_01 {
-  position: relative;
-  display: block;
+  @extend %pos--relative;
+  @extend %display--block;
   
   // This is the native select, we're making everything but the text invisible so
   // we can see the button styles in the wrapper 
@@ -73,14 +73,14 @@ h1 {
   // Custom arrow sits on top of the select - could be an image, SVG, icon font,
   // etc. or the arrow could just baked into the bg image on the select.
   &::after {
+    @extend %pos--absolute;
     content: " ";
-    position: absolute;
     top: 50%;
     right: 1em;
     z-index: 2;
     // These hacks make the select behind the arrow clickable in some browsers
     pointer-events: none;
-    display: none;
+    @extend %display--none;
   }
 }
 
@@ -88,7 +88,7 @@ h1 {
   // Show custom arrow
   .custom-select1_01 {
     &::after {
-      display: block;
+      @extend %display--block;
     }
 
     // Remove select styling
