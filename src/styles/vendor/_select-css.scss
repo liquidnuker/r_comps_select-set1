@@ -13,11 +13,12 @@ h1 {
 
 .custom-select1_01 {
   border: 1px solid #bbb;
-  border-radius: .3em;
-  box-shadow: 0 1px 0 1px rgba(0,0,0,.04);
+  // border-radius: 2px;
+  // box-shadow: 
   background: #f3f3f3; // Old browsers 
   @include background-gradient(#ffffff, #e5e5e5, 'vertical');  
 
+  // triangle
   &::after {
     width: 0;
     height: 0;
@@ -34,8 +35,8 @@ h1 {
   select {
     &:focus {
       // It'd be nice to use -webkit-focus-ring-color here but it doesn't work on box-shadow
-      box-shadow: 0 0 1px 3px rgba(59, 153, 252, .7);
-      box-shadow: 0 0 0 3px -moz-mac-focusring;
+      // box-shadow: 0 0 1px 3px rgba(59, 153, 252, .7);
+      // box-shadow: 0 0 0 3px -moz-mac-focusring;
       color: #222; // Match-02 
     }
   }
@@ -64,7 +65,7 @@ h1 {
     width: 100%;
     margin: 0;
     outline: none;
-    padding: .6em .8em .5em .8em;
+    // padding: 2px .8em 2px 2px; /* trbl */
     // Font size must be 16px to prevent iOS page zoom on focus
     font-size: 16px;
   }  
